@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>FORM ĐĂNG KÝ</h2>
+    <form id="registrationForm">
+        <label for="ho">Họ:</label>
+        <input type="text" id="ho" name="ho"><br><br>
+
+        <label for="ten">Tên:</label>
+        <input type="text" id="ten" name="ten"><br><br>
+
+        <label for="ngaySinh">Ngày sinh:</label>
+        <div class="birthdate">
+            <select id="ngay" name="ngay">
+                <option value="">Ngày</option>
+                <!-- Các option cho ngày -->
+            </select>
+            <select id="thang" name="thang">
+                <option value="">Tháng</option>
+                <!-- Các option cho tháng -->
+            </select>
+            <select id="nam" name="nam">
+                <option value="">Năm</option>
+                <!-- Các option cho năm -->
+            </select>
+        </div><br><br>
+    
+        <label>Giới tính:</label>
+        <input type="radio" id="nam" name="gioiTinh" value="Nam"> Nam
+        <input type="radio" id="nu" name="gioiTinh" value="Nữ"> Nữ<br><br>
+
+        <label for="soDienThoai">Số điện thoại:</label>
+        <input type="text" id="soDienThoai" name="soDienThoai"><br><br>
+
+        <label>Sở thích:</label>
+        <input type="checkbox" id="docSach" name="soThich" value="Đọc sách"> Đọc sách
+        <input type="checkbox" id="xemPhim" name="soThich" value="Xem phim"> Xem phim
+        <input type="checkbox" id="ngheNhac" name="soThich" value="Nghe nhạc"> Nghe nhạc
+        <input type="checkbox" id="daBong" name="soThich" value="Đá bóng"> Đá bóng<br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <script src="validate.js"></script>
+</body>
+</html>

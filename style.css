@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Đảm bảo form không quá rộng */
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #800080;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"], 
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"], 
+input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #800080;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, 
+input[type="reset"]:hover {
+    background-color: #600060;
+}
+
+input[type="reset"] {
+    background-color: #aaa;
+}
+
+input[type="reset"]:hover {
+    background-color: #888;
+}
+
+/* Điều chỉnh ngày, tháng, năm nằm trên cùng một dòng */
+.birthdate select {
+    width: 30%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.birthdate select:last-child {
+    margin-right: 0;
+}
+
+/* Media query cho màn hình nhỏ */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+        max-width: 90%; /* Form chiếm tối đa 90% màn hình trên thiết bị nhỏ */
+    }
+
+    .birthdate select {
+        width: 28%; /* Giảm độ rộng một chút để tránh tràn màn hình nhỏ */
+    }
+}
